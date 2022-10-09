@@ -1,0 +1,22 @@
+#Задание 1:
+
+def suma():
+    s = []
+    for i in range(10):
+        n = int(input())
+        s.append(n)
+    return sum(s)
+print(suma())
+
+#Задание 2:
+
+def zero(x): 
+  s = 0
+  n = [int(input()) for i in range(x)]
+  for i in n:
+    if i == 0: 
+      s += 1
+  print(s)
+zero(10)
+
+#задание 3
