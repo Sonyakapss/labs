@@ -6,7 +6,7 @@ bot = telebot.TeleBot('5955607703:AAHOZ0AYb-tLB9B6V2uCX9qvls9inHZzpls')
 
 @bot.message_handler(commands=['start'])
 def start(message):
-    bot.send_message(message.chat.id,'Привет. Напиши /help, чтобы узнать мои команды:)')
+    bot.send_message(message.chat.id,'Привет. Напиши /help, чтобы узнать мои команды')
 
 @bot.message_handler(commands=['help'])
 def help(message):
