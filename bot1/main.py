@@ -10,10 +10,10 @@ def start(message):
 
 @bot.message_handler(commands=['help'])
 def help(message):
-    bot.send_message(message.chat.id,'Чтобы получить фото, напиши /start')
+    bot.send_message(message.chat.id,'Чтобы получить фото, напиши /starts')
 
-@bot.message_handler(commands=['start'])
-def start(message):
+@bot.message_handler(commands=['starts'])
+def starts(message):
     r = requests.get('http://thecatapi.com/api/images/get?format=src')
     url = r.url
     bot.send_photo(message.chat.id, url)
